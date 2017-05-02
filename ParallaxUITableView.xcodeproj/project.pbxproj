@@ -13,6 +13,11 @@
 		306B27391EB87D640013027E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 306B27371EB87D640013027E /* Main.storyboard */; };
 		306B273B1EB87D640013027E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 306B273A1EB87D640013027E /* Assets.xcassets */; };
 		306B273E1EB87D640013027E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 306B273C1EB87D640013027E /* LaunchScreen.storyboard */; };
+		306B274D1EB883C80013027E /* ParallaxHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 306B27461EB883C80013027E /* ParallaxHeaderView.m */; };
+		306B274E1EB883C80013027E /* StoryCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 306B27481EB883C80013027E /* StoryCommentCell.m */; };
+		306B274F1EB883C80013027E /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 306B274A1EB883C80013027E /* StoryViewController.m */; };
+		306B27501EB883C80013027E /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 306B274C1EB883C80013027E /* UIImage+ImageEffects.m */; };
+		306B27531EB883DF0013027E /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 306B27521EB883DF0013027E /* FXBlurView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,16 @@
 		306B273A1EB87D640013027E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		306B273D1EB87D640013027E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		306B273F1EB87D640013027E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		306B27451EB883C80013027E /* ParallaxHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallaxHeaderView.h; sourceTree = "<group>"; };
+		306B27461EB883C80013027E /* ParallaxHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParallaxHeaderView.m; sourceTree = "<group>"; };
+		306B27471EB883C80013027E /* StoryCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryCommentCell.h; sourceTree = "<group>"; };
+		306B27481EB883C80013027E /* StoryCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryCommentCell.m; sourceTree = "<group>"; };
+		306B27491EB883C80013027E /* StoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewController.h; sourceTree = "<group>"; };
+		306B274A1EB883C80013027E /* StoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryViewController.m; sourceTree = "<group>"; };
+		306B274B1EB883C80013027E /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		306B274C1EB883C80013027E /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		306B27511EB883DF0013027E /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
+		306B27521EB883DF0013027E /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,16 @@
 		306B272D1EB87D630013027E /* ParallaxUITableView */ = {
 			isa = PBXGroup;
 			children = (
+				306B27511EB883DF0013027E /* FXBlurView.h */,
+				306B27521EB883DF0013027E /* FXBlurView.m */,
+				306B27451EB883C80013027E /* ParallaxHeaderView.h */,
+				306B27461EB883C80013027E /* ParallaxHeaderView.m */,
+				306B27471EB883C80013027E /* StoryCommentCell.h */,
+				306B27481EB883C80013027E /* StoryCommentCell.m */,
+				306B27491EB883C80013027E /* StoryViewController.h */,
+				306B274A1EB883C80013027E /* StoryViewController.m */,
+				306B274B1EB883C80013027E /* UIImage+ImageEffects.h */,
+				306B274C1EB883C80013027E /* UIImage+ImageEffects.m */,
 				306B27311EB87D630013027E /* AppDelegate.h */,
 				306B27321EB87D630013027E /* AppDelegate.m */,
 				306B27341EB87D630013027E /* ViewController.h */,
@@ -110,6 +135,7 @@
 				TargetAttributes = {
 					306B272A1EB87D630013027E = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3K8D743CZF;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -150,7 +176,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				306B274D1EB883C80013027E /* ParallaxHeaderView.m in Sources */,
+				306B274E1EB883C80013027E /* StoryCommentCell.m in Sources */,
+				306B27501EB883C80013027E /* UIImage+ImageEffects.m in Sources */,
+				306B274F1EB883C80013027E /* StoryViewController.m in Sources */,
 				306B27361EB87D630013027E /* ViewController.m in Sources */,
+				306B27531EB883DF0013027E /* FXBlurView.m in Sources */,
 				306B27331EB87D630013027E /* AppDelegate.m in Sources */,
 				306B27301EB87D630013027E /* main.m in Sources */,
 			);
@@ -272,6 +303,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3K8D743CZF;
 				INFOPLIST_FILE = ParallaxUITableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.saeed.ParallaxUITableView;
@@ -283,6 +315,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3K8D743CZF;
 				INFOPLIST_FILE = ParallaxUITableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.saeed.ParallaxUITableView;
