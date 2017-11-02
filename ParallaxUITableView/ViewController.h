@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIView *vwImageFrame;
+@property (nonatomic) IBOutlet UIImageView *bluredImageView;
 
 @end
 
